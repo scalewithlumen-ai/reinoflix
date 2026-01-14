@@ -3,6 +3,7 @@
 *.bak
 *.webp-bak
 *.before-carousel-fix
+*.before-mobile-fix
 
 # Node modules
 node_modules/

@@ -100,6 +100,18 @@ O plugin WordPress WebP Express gera imagens WebP dinamicamente, mas essas não 
 
 **Arquivos corrigidos:** index.html
 
+### 5. Correção de URLs para Mobile
+
+**Problema:** URLs absolutas remanescentes em JSON-LD schemas e JavaScript config objects causavam problemas de carregamento no mobile.
+
+**Solução:**
+- ✅ Removidas 19 URLs absolutas de JSON-LD schemas (Yoast SEO)
+- ✅ Corrigidas URLs em JavaScript config objects (Elementor, EAEL)
+- ✅ URLs de AJAX e assets convertidas para relativas
+- ✅ Logo e carrosséis agora funcionam corretamente no mobile
+
+**Arquivos corrigidos:** index.html
+
 ## Scripts Úteis
 
 ### limpar_cloaker.py
@@ -139,6 +151,18 @@ Corrige:
 - Restaura carrosséis Elementor/Swiper do backup
 - Remove referências WebP dos carrosséis
 - Converte URLs absolutas para relativas no srcset
+
+### fix_mobile_urls.py
+Remove URLs absolutas de JSON-LD e JavaScript configs.
+
+```bash
+python fix_mobile_urls.py
+```
+
+Corrige:
+- Remove URLs absolutas de JSON-LD schemas (Yoast SEO)
+- Corrige JavaScript config objects (Elementor, EAEL)
+- Converte AJAX URLs e assets para relativas
 
 ## Problemas Conhecidos e Soluções
 
