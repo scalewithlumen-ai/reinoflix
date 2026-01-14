@@ -84,6 +84,22 @@ O plugin WordPress WebP Express gera imagens WebP dinamicamente, mas essas não 
 **Arquivos corrigidos:** 13 arquivos HTML
 **Erros resolvidos:** FOLHA-GOSPEL.png.webp, FOLHA-GOSPEL-1.png.webp e outros
 
+### 4. Restauração de Carrosséis e Correção de Logo
+
+**Problemas identificados:**
+1. Logo com URLs absolutas e relativas misturadas no srcset, causando erro
+2. Dois carrosséis de imagens (Elementor/Swiper) foram removidos acidentalmente pelo fix_webp.py
+
+**Causa raiz:** O script fix_webp.py removeu TODAS as tags `<picture>`, incluindo as que estavam dentro dos carrosséis.
+
+**Solução:**
+- ✅ Carrosséis restaurados do backup (elementos 7c702e79 e 54cf0fe6)
+- ✅ Estrutura Swiper completa recuperada com todos os slides
+- ✅ Referências WebP removidas dos carrosséis restaurados
+- ✅ URLs absolutas do logo convertidas para relativas no srcset
+
+**Arquivos corrigidos:** index.html
+
 ## Scripts Úteis
 
 ### limpar_cloaker.py
@@ -112,6 +128,18 @@ Corrige:
 - Atualiza caminhos de imagens
 - Remove extensões .webp duplicadas
 
+### fix_carousel_and_logo.py
+Restaura carrosséis e corrige logo srcset.
+
+```bash
+python fix_carousel_and_logo.py
+```
+
+Corrige:
+- Restaura carrosséis Elementor/Swiper do backup
+- Remove referências WebP dos carrosséis
+- Converte URLs absolutas para relativas no srcset
+
 ## Problemas Conhecidos e Soluções
 
 ### Imagens não carregam
@@ -125,6 +153,12 @@ Corrige:
 
 ### Redirecionamentos estranhos
 ✅ **Solucionado** - Scripts de cloaking foram removidos
+
+### Logo carrega mas depois dá erro
+✅ **Solucionado** - URLs absolutas no srcset convertidas para relativas
+
+### Carrosséis de imagens removidos
+✅ **Solucionado** - Carrosséis Elementor/Swiper restaurados do backup
 
 ## Tecnologias Utilizadas
 

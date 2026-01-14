@@ -2,6 +2,7 @@
 *.backup
 *.bak
 *.webp-bak
+*.before-carousel-fix
 
 # Node modules
 node_modules/
