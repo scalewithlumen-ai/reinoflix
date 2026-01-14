@@ -36,7 +36,11 @@
       "Bash(python:*)",
       "Bash(git init:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nRemove malicious cloaking scripts from site\n\nRemoved two types of cloaking code from all HTML files:\n- URL redirection script \\(handleClick, mainpixl_ic\\) that intercepted clicks and modified URLs\n- Auto-reload script \\(litespeed_vary\\) that forced automatic page refreshes\n- Referrer manipulation script \\(litespeed_docref\\) that masked traffic origin\n\nTotal: 13 HTML files cleaned across multiple directories\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nFix Netlify deployment issues\n\n- Remove HTTrack comments that were showing before site loads\n- Convert absolute URLs to relative paths for proper resource loading\n- Update .gitignore to exclude .bak backup files\n\nFixed 17 HTML files across all directories\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }

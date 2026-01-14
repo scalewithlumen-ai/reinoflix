@@ -1,5 +1,6 @@
 # Backups
 *.backup
+*.bak
 
 # Node modules
 node_modules/
