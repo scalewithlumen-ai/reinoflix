@@ -112,6 +112,26 @@ O plugin WordPress WebP Express gera imagens WebP dinamicamente, mas essas não 
 
 **Arquivos corrigidos:** index.html
 
+### 6. Correção Final de Carrosséis e Caminhos de Imagem
+
+**Problema crítico descoberto:** Os carrosséis não foram restaurados corretamente na correção anterior. O backup usado (.webp-bak) JÁ tinha os carrosséis quebrados.
+
+**Problemas identificados:**
+1. Carrosséis tinham apenas 2 slides em vez de 11 (5 + 6)
+2. 16 imagens com caminhos sem barra inicial (`src="wp-content` em vez de `src="/wp-content"`)
+3. Backup correto estava em index.html.backup, não em .webp-bak
+
+**Solução:**
+- ✅ Restaurados carrosséis completos do backup original (index.html.backup)
+- ✅ Carousel 1: 5 slides restaurados com imagens episódicas
+- ✅ Carousel 2: 6 slides restaurados com imagens de categorias
+- ✅ Total: 11 slides funcionando (swiper-slide-inner)
+- ✅ Corrigidos 16 caminhos de imagem sem barra inicial
+- ✅ Todas as URLs absolutas removidas dos carrosséis
+- ✅ WebP references removidas mantendo imagens originais
+
+**Arquivos corrigidos:** index.html
+
 ## Scripts Úteis
 
 ### limpar_cloaker.py
@@ -163,6 +183,30 @@ Corrige:
 - Remove URLs absolutas de JSON-LD schemas (Yoast SEO)
 - Corrige JavaScript config objects (Elementor, EAEL)
 - Converte AJAX URLs e assets para relativas
+
+### fix_image_paths.py
+Corrige caminhos de imagens sem barra inicial.
+
+```bash
+python fix_image_paths.py
+```
+
+Corrige:
+- Adiciona barra inicial em src="wp-content -> src="/wp-content"
+- Corrige href, data-src, srcset
+- Garante caminhos absolutos corretos para imagens
+
+### restore_carousels_v2.py
+Restaura carrosséis completos do backup original.
+
+```bash
+python restore_carousels_v2.py
+```
+
+Corrige:
+- Extrai carrosséis completos de index.html.backup
+- Remove referências WebP
+- Restaura todos os 11 slides dos 2 carrosséis
 
 ## Problemas Conhecidos e Soluções
 

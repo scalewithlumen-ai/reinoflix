@@ -4,6 +4,9 @@
 *.webp-bak
 *.before-carousel-fix
 *.before-mobile-fix
+*.before-path-fix
+*.before-v2-carousel
+*.before-final-carousel
 
 # Node modules
 node_modules/
