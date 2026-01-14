@@ -1,6 +1,7 @@
 # Backups
 *.backup
 *.bak
+*.webp-bak
 
 # Node modules
 node_modules/
