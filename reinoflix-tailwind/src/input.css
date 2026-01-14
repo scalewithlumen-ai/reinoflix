@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos customizados */
+@layer components {
+  .btn-reinoflix {
+    @apply bg-reinoflix-red hover:bg-red-700 text-white font-bold py-3 px-8 rounded transition duration-300 transform hover:scale-105;
+  }
+}

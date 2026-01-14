@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reino Flix | Streaming bíblico | Streaming cristão infantil. +300 filmes e histórias bíblicas, jogos e atividades. Diversão que fortalece valores cristãos. Assista agora!</title>
+    <meta name="description" content="Streaming cristão infantil. +300 filmes e histórias bíblicas, jogos e atividades. Diversão que fortalece valores cristãos. Assista agora!">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'reinoflix-red': '#D20000',
+                        'reinoflix-green': '#008C33',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- LOGO DESKTOP -->
+    <header class="bg-black py-6 hidden md:block">
+        <div class="container mx-auto px-4">
+            <img src="./dist/images/2024/05/LOGO-BASICA-e1713269958358.png" alt="Reino Flix Logo" class="mx-auto max-w-2xl w-full">
+        </div>
+    </header>
+
+    <!-- LOGO MOBILE -->
+    <header class="bg-black py-4 md:hidden">
+        <div class="container mx-auto px-4">
+            <img src="./dist/images/2024/05/LOGO-BASICA-e1713269958358.png" alt="Reino Flix Logo" class="mx-auto w-full">
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="bg-gradient-to-b from-black to-gray-900 py-12 md:py-20 relative">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                SEU FILHO <br>PRÓXIMO DE DEUS
+            </h2>
+
+            <!-- CORRIGIDO: Espaçamento reduzido conforme solicitado -->
+            <h2 class="text-xl md:text-3xl font-semibold mb-2">
+                Com a <strong>única</strong> plataforma de entretenimento <strong>segura</strong> e <strong>edificante</strong> para sua criança
+            </h2>
+
+            <h1 class="text-sm text-gray-600 my-2">reino flix | reinoflix reinoflix.com Fiel Flix</h1>
+
+            <h2 class="text-lg md:text-2xl mb-8">
+                Histórias e Filmes Bíblicos, Atividades e jogos inspirados na Palavra de Deus!
+            </h2>
+
+            <a href="#planos" class="inline-block bg-reinoflix-red hover:bg-red-700 text-white font-bold py-4 px-10 rounded-lg transition duration-300 transform hover:scale-105 text-lg">
+                Acessar plataforma
+            </a>
+
+            <p class="text-2xl md:text-4xl font-bold mt-10">
+                <span class="text-reinoflix-red">Episódios</span> <span class="text-white">novos todos os dias</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- CARROSSEL 1 - EPISÓDIOS -->
+    <section class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="swiper carousel1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./dist/images/2024/05/1-3.png" alt="Episódio 1"></div>
+                    <div class="swiper-slide"><img src="./dist/images/2024/05/2-3.png" alt="Episódio 2"></div>
+                    <div class="swiper-slide"><img src="./dist/images/2024/05/3-3.png" alt="Episódio 3"></div>
+                    <div class="swiper-slide"><img src="./dist/images/2024/05/4-2.png" alt="Episódio 4"></div>
+                    <div class="swiper-slide"><img src="./dist/images/2024/05/5-3.png" alt="Episódio 5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APROXIMAR FILHO DE DEUS -->
+    <section class="bg-black py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-8">
+                A maneira mais fácil e divertida de aproximar seu filho(a) de DEUS
+            </h2>
+        </div>
+    </section>
+
+    <!-- ASSISTA ONDE QUISER - MOBILE -->
+    <section class="bg-gray-900 py-12 md:hidden">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Assista onde quiser</h2>
+            <p class="text-lg mb-6">Assista em qualquer lugar, em qualquer horário ou dia que quiser!</p>
+            <video autoplay muted loop playsinline class="w-full rounded-lg">
+                <source src="./dist/images/2024/06/reinoflix-2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- ASSISTA ONDE QUISER - DESKTOP -->
+    <section class="bg-gray-900 py-16 hidden md:block">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Assista onde quiser</h2>
+            <p class="text-xl mb-8">Assista em qualquer lugar, em qualquer horário ou dia que quiser!</p>
+            <video autoplay muted loop playsinline class="max-w-4xl mx-auto rounded-lg">
+                <source src="./dist/images/2024/06/reinoflix-2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- ASSISTA EM QUALQUER DISPOSITIVO -->
+    <section class="bg-black py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">Assista em qualquer dispositivo</h2>
+            <p class="text-lg md:text-xl mb-8">Assista em Smart Tvs, Playstation, Xbox, Celulares, tablet e laptop. Em até 5 telas simultâneas!</p>
+            <video autoplay muted loop playsinline class="max-w-4xl mx-auto rounded-lg">
+                <source src="./dist/images/2024/06/reinoflix-4.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- VOCÊ VAI RECEBER -->
+    <section id="beneficios" class="bg-gradient-to-b from-gray-900 to-black py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12">VOCÊ VAI RECEBER</h2>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg border border-gray-700">
+                    <span class="inline-block bg-reinoflix-red text-white font-bold text-2xl w-12 h-12 rounded-full flex items-center justify-center mb-4">1</span>
+                    <h3 class="text-xl font-bold">+300 filmes e histórias bíblicas</h3>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg border border-gray-700">
+                    <span class="inline-block bg-reinoflix-red text-white font-bold text-2xl w-12 h-12 rounded-full flex items-center justify-center mb-4">2</span>
+                    <h3 class="text-xl font-bold">História bíblica nova todos os dias em seu Whatsapp</h3>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg border border-gray-700">
+                    <span class="inline-block bg-reinoflix-red text-white font-bold text-2xl w-12 h-12 rounded-full flex items-center justify-center mb-4">3</span>
+                    <h3 class="text-xl font-bold">+100 atividades de alfabetização com conteúdos bíblicos (Bônus)</h3>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg border border-gray-700">
+                    <span class="inline-block bg-reinoflix-red text-white font-bold text-2xl w-12 h-12 rounded-full flex items-center justify-center mb-4">4</span>
+                    <h3 class="text-xl font-bold">+100 histórias bíblicas para leitura (formato PDF)</h3>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg border border-gray-700">
+                    <span class="inline-block bg-reinoflix-red text-white font-bold text-2xl w-12 h-12 rounded-full flex items-center justify-center mb-4">5</span>
+                    <h3 class="text-xl font-bold">Mapas mentais (Bônus)</h3>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg border border-gray-700">
+                    <span class="inline-block bg-reinoflix-red text-white font-bold text-2xl w-12 h-12 rounded-full flex items-center justify-center mb-4">6</span>
+                    <h3 class="text-xl font-bold">Jogos bíblicos pedagógicos (Bônus)</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARROSSEL 2 - APP SCREENS -->
+    <section class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="swiper carousel2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./dist/images/2024/06/Prancheta-4.png" alt="Tela 1"></div>
+                    <div class="swiper-slide"><img src="./dist/images/2024/06/Prancheta-3.png" alt="Tela 2"></div>
+                    <div class="swiper-slide"><img src="./dist/images/2024/06/BEM-VINDO.png" alt="Bem-vindo"></div>
+                    <div class="swiper-slide"><img src="./dist/images/2024/06/Prancheta-2.png" alt="Tela 3"></div>
+                    <div class="swiper-slide"><img src="./dist/images/2024/06/Prancheta-5.png" alt="Tela 4"></div>
+                    <div class="swiper-slide"><img src="./dist/images/2024/06/JOGOS.png" alt="Jogos"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO EDUCACIONAL -->
+    <section class="bg-black py-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg md:text-2xl max-w-4xl mx-auto leading-relaxed mb-8">
+                Em um mundo cada vez mais conectado, é essencial equilibrar o aprendizado offline com as experiências. Você está investindo não apenas em uma educação espiritual, mas também em uma experiência única ao seu filho.
+            </p>
+            <a href="#planos" class="inline-block bg-reinoflix-red hover:bg-red-700 text-white font-bold py-4 px-10 rounded-lg transition duration-300 transform hover:scale-105 text-lg">
+                Acessar plataforma
+            </a>
+        </div>
+    </section>
+
+    <!-- O REINOFLIX NÃO SE TRATA -->
+    <section class="bg-gradient-to-b from-gray-900 to-black py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                O <span class="text-reinoflix-red">REINOFLIX</span> NÃO SE TRATA<br>
+                <span class="text-reinoflix-red">"APENAS DE FILMES"</span>
+            </h2>
+            <p class="text-lg md:text-2xl max-w-4xl mx-auto leading-relaxed">
+                E sim uma plataforma intuitiva que irá cuidar por completo da educação da sua criança da melhor maneira possível!
+                Desenvolvida por profissionais da área, Pedagogos e Psicólogos Cristãos!
+            </p>
+            <p class="text-sm text-gray-600 mt-4">reino flix | reinoflix reinoflix.com Fiel Flix</p>
+        </div>
+    </section>
+
+    <!-- COMO RECEBEREI ACESSO -->
+    <section class="bg-black py-16">
+        <div class="container mx-auto px-4 text-center">
+            <!-- CORRIGIDO: Título reorganizado -->
+            <h2 class="text-2xl md:text-4xl font-bold mb-8">
+                COMO RECEBEREI<br>
+                <span class="text-reinoflix-red text-3xl md:text-5xl">ACESSO AO APLICATIVO</span>
+            </h2>
+
+            <div class="max-w-3xl mx-auto mb-8">
+                <img src="./dist/images/2024/07/Apos-a-assinatura-voce-ira-receber-em-seu-e-mail-o-login-e-acesso-para-acessa.-Voce-recebera-o-acesso-privado-da-plataforma-amdpamdkamdlksmdlk-melhorar-texto.png" alt="Como receber acesso" class="w-full rounded-lg mb-4">
+            </div>
+
+            <p class="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                Após a assinatura você irá receber em seu e-mail o login para acessar a plataforma exclusiva diretamente no seu dispositivo.
+            </p>
+        </div>
+    </section>
+
+    <!-- GARANTIA 7 DIAS -->
+    <section class="bg-gradient-to-b from-gray-900 to-black py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                QUANTO VALE A VIDA ESPIRITUAL E PSICOLÓGICA DO SEU FILHO(A)?
+            </h2>
+
+            <p class="text-2xl md:text-3xl mb-8">
+                Aposto que você respondeu<br><br>
+                "NÃO TEM PREÇO" Correto?
+            </p>
+
+            <div class="max-w-3xl mx-auto text-lg md:text-xl leading-relaxed space-y-4">
+                <p>A única maneira de você saber se a plataforma é para você ou não é estando por dentro.</p>
+                <p>E para tornar essa decisão ainda mais fácil, te damos total liberdade para juntar-se a nós e caso você não aprove, nós te devolveremos seu dinheiro!</p>
+                <p>Você tem <strong>7 dias de garantia</strong>.</p>
+                <p>Basta solicitar que fazemos o estorno sem lhe perguntar nada. Cancelamento rápido e fácil.</p>
+                <p>Você não tem o que perder, não é mesmo?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANOS DE PREÇO -->
+    <section id="planos" class="bg-black py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                QUANTO VALE A VIDA ESPIRITUAL E PSICOLÓGICA DO SEU FILHO(A)?
+            </h2>
+
+            <p class="text-2xl md:text-3xl mb-4">
+                Aposto que você respondeu<br><br>
+                "NÃO TEM PREÇO" Correto?
+            </p>
+
+            <p class="text-xl md:text-2xl mb-12">
+                POR ESSE MOTIVO ESTAMOS LIBERANDO OS <span class="text-reinoflix-red">ACESSOS</span> <span class="text-white">POR UM VALOR SIMBÓLICO</span>
+            </p>
+
+            <!-- CARD PLANO VITALÍCIO -->
+            <div class="max-w-md mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg border border-gray-700 shadow-2xl overflow-hidden">
+                <div class="bg-green-600 text-center py-4">
+                    <h3 class="text-2xl md:text-3xl font-bold">PLANO Vitalício</h3>
+                </div>
+
+                <!-- CORRIGIDO: Preço centralizado -->
+                <div class="p-8">
+                    <h2 class="text-5xl md:text-6xl font-bold text-center mb-8">
+                        R$ 157,00
+                    </h2>
+
+                    <div class="border-t border-gray-600 mb-8"></div>
+
+                    <ul class="space-y-4 mb-8 text-left">
+                        <li class="flex items-start">
+                            <span class="text-reinoflix-red mr-3 text-xl font-bold">✓</span>
+                            <span>+ De 300 Histórias E Filmes Bíblicos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-reinoflix-red mr-3 text-xl font-bold">✓</span>
+                            <span>Acesso A Episódios Novos E Histórias Para Leitura Todos Os Dias No Whatsapp</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-reinoflix-red mr-3 text-xl font-bold">✓</span>
+                            <span>Audiobook Das Histórias Do Dia No Whatsapp</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-reinoflix-red mr-3 text-xl font-bold">✓</span>
+                            <span>Atividades E Jogos Bíblicos (Bônus)</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://payfast.greenn.com.br/redirect/239356?sck=reinofgoogle&sck2=google" class="block w-full bg-reinoflix-red hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg transition duration-300 transform hover:scale-105 text-center text-lg">
+                        ESCOLHA O PLANO PREMIUM
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARAÇÃO -->
+    <section class="bg-gray-900 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">
+                DIFERENÇA ENTRE DESENHOS TRADICIONAIS X CRISTÃOS
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- TRADICIONAL (NÃO RECOMENDADO) -->
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold text-reinoflix-red mb-6">
+                        TRADICIONAIS<br>(NÃO RECOMENDADO)
+                    </h3>
+                    <img src="./dist/images/2024/09/FOLHA-GOSPEL.png" alt="Desenhos Tradicionais" class="w-full rounded-lg">
+                </div>
+
+                <!-- CRISTÃO (RECOMENDADO) -->
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold text-reinoflix-green mb-6">
+                        CRISTÃOS<br>(RECOMENDADO)
+                    </h3>
+                    <img src="./dist/images/2024/09/FOLHA-GOSPEL-1.png" alt="Desenhos Cristãos" class="w-full rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-black py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">PERGUNTAS FREQUENTES</h2>
+
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-700 transition">
+                        <span class="text-xl font-semibold">O que é a ReinoFlix?</span>
+                        <span id="icon-1" class="text-3xl">+</span>
+                    </button>
+                    <div id="faq-1" class="hidden p-6 pt-0 text-gray-300 text-lg">
+                        O ReinoFlix é um serviço de streaming que oferece uma ampla variedade de filmes cristãos e historinhas bíblicas.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-700 transition">
+                        <span class="text-xl font-semibold">Posso baixar vídeos para assistir offline?</span>
+                        <span id="icon-2" class="text-3xl">+</span>
+                    </button>
+                    <div id="faq-2" class="hidden p-6 pt-0 text-gray-300 text-lg">
+                        Sim, agora você pode baixar nos dispositivos! Baixe seus episódios favoritos enquanto estiver no WIFI e assista-os em qualquer lugar.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-700 transition">
+                        <span class="text-xl font-semibold">Para quais idades o ReinoFlix é voltado?</span>
+                        <span id="icon-3" class="text-3xl">+</span>
+                    </button>
+                    <div id="faq-3" class="hidden p-6 pt-0 text-gray-300 text-lg">
+                        Nossos programas são voltados para crianças de 1 a 15 anos.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-700 transition">
+                        <span class="text-xl font-semibold">Como será disponibilizado o meu acesso à plataforma?</span>
+                        <span id="icon-4" class="text-3xl">+</span>
+                    </button>
+                    <div id="faq-4" class="hidden p-6 pt-0 text-gray-300 text-lg">
+                        Após a confirmação do pagamento, o acesso à plataforma será imediatamente liberado. Você receberá um e-mail contendo o link de acesso para baixar o aplicativo, além de seu login e senha exclusivos.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(5)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-700 transition">
+                        <span class="text-xl font-semibold">Como faço para cancelar?</span>
+                        <span id="icon-5" class="text-3xl">+</span>
+                    </button>
+                    <div id="faq-5" class="hidden p-6 pt-0 text-gray-300 text-lg">
+                        A ReinoFlix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer tempo.
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(6)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-700 transition">
+                        <span class="text-xl font-semibold">Onde posso assistir?</span>
+                        <span id="icon-6" class="text-3xl">+</span>
+                    </button>
+                    <div id="faq-6" class="hidden p-6 pt-0 text-gray-300 text-lg">
+                        Assista onde quiser, quando quiser. Faça login com sua conta para começar a assistir no computador ou em qualquer aparelho como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames. Você também pode baixar os seus episódios favoritos com iOS, Android ou Windows 10. Use downloads para levar a ReinoFlix para onde quiser sem precisar de conexão com a Internet.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 text-center">
+        <img src="./dist/images/2024/05/LOGO-BASICA-e1713269958358.png" alt="Reino Flix Logo" class="mx-auto max-w-2xl w-full mb-6">
+        <p class="text-white text-sm">Feito com ❤️ para sua Familia!</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Carrossel 1 - LTR
+        const carousel1 = new Swiper('.carousel1', {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            speed: 5000,
+            breakpoints: {
+                768: {
+                    slidesPerView: 4,
+                }
+            }
+        });
+
+        // Carrossel 2 - RTL
+        const carousel2 = new Swiper('.carousel2', {
+            slidesPerView: 3,
+            spaceBetween: 15,
+            loop: true,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+                reverseDirection: true,
+            },
+            speed: 10000,
+            breakpoints: {
+                768: {
+                    slidesPerView: 4,
+                }
+            }
+        });
+
+        // FAQ Toggle
+        function toggleFaq(num) {
+            const content = document.getElementById(`faq-${num}`);
+            const icon = document.getElementById(`icon-${num}`);
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.textContent = '×';
+                icon.style.transform = 'rotate(45deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.textContent = '+';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>

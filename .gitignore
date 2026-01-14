@@ -1,0 +1,26 @@
+# Backups
+*.backup
+
+# Node modules
+node_modules/
+reinoflix-tailwind/node_modules/
+
+# Logs
+*.log
+hts-log.txt
+hts-cache/
+
+# Temporary files
+*.tmp
+nul
+cookies.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

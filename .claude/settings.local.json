@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m http.server:*)",
+      "Bash(dir /s /b \"C:\\\\Meus Sites\\\\reinoflix\\\\*.php\")",
+      "Bash(dir /s /b \"C:\\\\Meus Sites\\\\reinoflix\")",
+      "Bash(findstr:*)",
+      "Bash(where /r \"C:\\\\Meus Sites\\\\reinoflix\" *.exe *.dll *.bat *.cmd *.vbs *.ps1)",
+      "Bash(where /r \"C:\\\\Meus Sites\\\\reinoflix\" *.php)",
+      "Bash(powershell:*)",
+      "Bash(rm \"C:\\\\Meus Sites\\\\reinoflix\\\\nul\")",
+      "Bash(ls -la \"C:\\\\Meus Sites\\\\reinoflix.com\\\\wp-content\\\\litespeed\\\\css\"\" 2>/dev/null || ls -la \"C:/Meus Sites/reinoflix.com/wp-content/litespeed/css/\" 2>/dev/null || echo \"Diretório não encontrado \")",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(npx shadcn@latest init -d)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(dir:*)",
+      "Bash(copy \"C:\\\\Meus Sites\\\\reinoflix\\\\melhorias.css\" \"C:\\\\Meus Sites\\\\reinoflix\\\\reinoflix.com\\\\melhorias.css\")",
+      "Bash(curl:*)",
+      "Bash(netstat:*)",
+      "Bash(timeout:*)",
+      "Bash(powershell -Command \"Start-Process ''http://localhost:8000''\")",
+      "Bash(npx -y serve -l 8000)",
+      "Bash(ping:*)",
+      "Bash(npx -y serve -p 8000)",
+      "Bash(php -S:*)",
+      "Bash(npx:*)",
+      "Bash(powershell -Command \"Start-Process ''C:\\\\Meus Sites\\\\reinoflix\\\\reinoflix.com\\\\index.html''\")",
+      "Bash(ls:*)",
+      "Bash(npm pkg set:*)",
+      "Bash(./node_modules/.bin/tailwindcss:*)",
+      "Bash(powershell -Command \"Stop-Process -Name chrome -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 1; Start-Process chrome ''C:\\\\Meus Sites\\\\reinoflix\\\\reinoflix-tailwind\\\\index.html''\")",
+      "Bash(powershell -Command \"Stop-Process -Name chrome -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 1; Start-Process chrome ''C:\\\\Meus Sites\\\\reinoflix\\\\reinoflix-fixed\\\\index.html''\")",
+      "Bash(python:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

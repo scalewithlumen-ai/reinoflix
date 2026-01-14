@@ -1,0 +1,274 @@
+/* ==========================================
+   ESTILO NETFLIX - Card de Pricing e FAQ
+   ========================================== */
+
+/* ===================================
+   CARD DE PRICING - ESTILO NETFLIX
+   =================================== */
+
+/* Container do card - Estilo Netflix */
+.elementor-element[data-id="169378ec"],
+.elementor-element[data-id="43aeaf0a"] {
+    position: relative;
+}
+
+.elementor-element[data-id="169378ec"] .elementor-widget-container,
+.elementor-element[data-id="43aeaf0a"] .elementor-widget-container {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 2rem 1.8rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+/* Hover Netflix - Escala e eleva */
+.elementor-element[data-id="169378ec"]:hover .elementor-widget-container,
+.elementor-element[data-id="43aeaf0a"]:hover .elementor-widget-container {
+    transform: scale(1.03);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
+    border-color: rgba(229, 9, 20, 0.5);
+}
+
+/* Título do plano - Netflix style */
+.elementor-element[data-id="169378ec"] h2.elementor-heading-title,
+.elementor-element[data-id="43aeaf0a"] h2.elementor-heading-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.02em;
+}
+
+/* Lista de benefícios - Clean Netflix */
+.elementor-widget-text-editor ul {
+    margin: 1.5rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.elementor-widget-text-editor li {
+    padding: 1rem 0;
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    transition: all 0.2s ease;
+}
+
+.elementor-widget-text-editor li:last-child {
+    border-bottom: none;
+}
+
+/* Check mark - Vermelho Netflix */
+.elementor-widget-text-editor li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #E50914;
+    font-weight: bold;
+    font-size: 1.2rem;
+    top: 0.9rem;
+}
+
+.elementor-widget-text-editor li:hover {
+    color: #fff;
+    padding-left: 2.2rem;
+}
+
+/* Botão - Estilo Netflix */
+.elementor-button-link {
+    background: #E50914 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 0.8rem 2rem !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    letter-spacing: 0.02em !important;
+    transition: all 0.2s ease !important;
+    box-shadow: none !important;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+.elementor-button-link:hover {
+    background: #f40612 !important;
+    transform: scale(1.05);
+}
+
+/* ===================================
+   FAQ - ESTILO NETFLIX
+   =================================== */
+
+/* Container FAQ */
+.elementor-accordion {
+    margin-top: 2rem;
+}
+
+/* Título da seção FAQ */
+.elementor-accordion .elementor-heading-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Item FAQ - Minimalista Netflix */
+.elementor-accordion-item {
+    margin-bottom: 0.5rem;
+    border-radius: 0;
+    background: #2f2f2f;
+    border: none;
+    border-bottom: 1px solid #000;
+    transition: all 0.3s ease;
+}
+
+.elementor-accordion-item:hover {
+    background: #333;
+}
+
+/* Item aberto - Destaque sutil */
+.elementor-accordion-item.elementor-active {
+    background: #2f2f2f;
+}
+
+/* Título da pergunta - Netflix style */
+.elementor-tab-title {
+    padding: 1.5rem 3rem 1.5rem 1.5rem !important;
+    font-size: 1.25rem !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0 !important;
+    color: #fff !important;
+    transition: all 0.2s ease;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+.elementor-accordion-item:hover .elementor-tab-title {
+    color: #fff !important;
+}
+
+/* Ícone + Netflix */
+.elementor-accordion-icon {
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.elementor-accordion-icon svg {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotação do ícone quando aberto */
+.elementor-accordion-item.elementor-active .elementor-accordion-icon-opened svg {
+    transform: rotate(45deg);
+}
+
+/* Conteúdo da resposta */
+.elementor-tab-content {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    line-height: 1.6;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Animação suave */
+.elementor-tab-content p {
+    animation: fadeInNetflix 0.3s ease;
+}
+
+@keyframes fadeInNetflix {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================================
+   CORREÇÕES DE LAYOUT E ESPAÇAMENTO
+   =================================== */
+
+/* Centralizar preço no card plano vitalício (mobile) */
+.elementor-element[data-id="7b84f409"] .elementor-heading-title {
+    text-align: center !important;
+}
+
+/* ===================================
+   RESPONSIVO NETFLIX
+   =================================== */
+
+@media (max-width: 768px) {
+    /* Card pricing mobile */
+    .elementor-element[data-id="169378ec"] .elementor-widget-container,
+    .elementor-element[data-id="43aeaf0a"] .elementor-widget-container {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .elementor-widget-text-editor li {
+        padding: 0.8rem 0;
+        padding-left: 1.8rem;
+        font-size: 0.95rem;
+    }
+
+    /* FAQ mobile */
+    .elementor-tab-title {
+        padding: 1.2rem 2.5rem 1.2rem 1.2rem !important;
+        font-size: 1.1rem !important;
+    }
+
+    .elementor-tab-content {
+        padding: 0 1.2rem 1.2rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .elementor-accordion-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Botão mobile */
+    .elementor-button-link {
+        padding: 0.7rem 1.5rem !important;
+        font-size: 1rem !important;
+        width: 100%;
+    }
+
+    /* ===================================
+       CORREÇÕES ESPECÍFICAS MOBILE
+       =================================== */
+
+    /* Reduzir espaçamento entre textos no hero */
+    .elementor-element[data-id="410bb291"] {
+        margin-bottom: 0.5rem !important;
+        padding-bottom: 0 !important;
+    }
+
+    .elementor-element[data-id="aa36b7f"] {
+        margin-top: 0.5rem !important;
+        padding-top: 0 !important;
+    }
+
+    /* Corrigir espaçamento preto ao final da seção "O REINOFLIX NÃO SE TRATA" */
+    .elementor-element[data-id="53118bc1"] {
+        padding-bottom: 1rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Corrigir título quebrado "COMO RECEBEREI O APLICATIVO" */
+    .elementor-element[data-id="1c36f348"] .elementor-heading-title,
+    .elementor-element[data-id="767628d3"] .elementor-heading-title {
+        white-space: normal !important;
+        word-wrap: break-word !important;
+        hyphens: auto !important;
+        line-height: 1.3 !important;
+    }
+}
